@@ -19,28 +19,49 @@ The **LIMA Advanced Control System** is a professional, high-precision graphical
 
 ---
 
-## 📸 System Gallery & Monitoring
+---
 
-Below are the screenshots from the LIMA Advanced Control Interface and the real-time monitoring dashboard.
+## 📸 System Gallery
 
-### System Interface
-| Main Control Menu | Home Positioning & Calibration |
+A comprehensive look at the LIMA Advanced Control System modules, from initial alignment to real-time process monitoring.
+
+### 🎮 Interface Modules
+| **Main Menu** | **Home Positioning** |
 |:---:|:---:|
 | <img src="docs/screenshots/01_main_menu.png" width="400"> | <img src="docs/screenshots/02_home_positioning.png" width="400"> |
 
-| Valve & Vacuum Controls | Motor Configuration |
+| **Valve Controls** | **Motor Settings** |
 |:---:|:---:|
 | <img src="docs/screenshots/03_valve_controls.png" width="400"> | <img src="docs/screenshots/04_motor_settings.png" width="400"> |
 
-### Real-Time Telemetry
-The system parameters are streamed via InfluxDB and visualized through a custom Grafana dashboard for hardware health and process tracking.
+| **Diagnostics** | **Process Management** |
+|:---:|:---:|
+| <img src="docs/screenshots/05_diagnostics.png" width="400"> | <img src="docs/screenshots/07_Process.png" width="400"> |
+
+### 🔬 Alignment & Vision
+*Real-time microscope feed integration and wafer alignment sequences.*
+
+| **Alignment Sequence 01** | **Alignment Sequence 02** |
+|:---:|:---:|
+| <img src="docs/screenshots/Alligmen_01.PNG" width="400"> | <img src="docs/screenshots/Alligmen_02.PNG" width="400"> |
+
+| **Alignment Sequence 03** | **Alignment Sequence 05** |
+|:---:|:---:|
+| <img src="docs/screenshots/Alligmen_03.PNG" width="400"> | <img src="docs/screenshots/Alligmen_05.PNG" width="400"> |
+
+---
+
+## 📊 Real-Time Telemetry (Grafana)
+The system streams hardware health and process data via InfluxDB to a dual-layered Grafana dashboard.
 
 <div align="center">
   <img src="docs/screenshots/06_grafana_monitoring_1.png" width="850" style="display: block; margin-bottom: 0;">
   <img src="docs/screenshots/06_grafana_monitoring_2.png" width="850" style="display: block; margin-top: -1px;">
 </div>
 
-> **System Note:** Monitoring includes real-time telemetry for STM32 connectivity, motor encoder positions, and pneumatic valve states.
+> **Note:** The dashboard visualizes real-time status for all 9 motor axes, vacuum levels, and STM32 communication logs.
+
+---
 
 
 ---
