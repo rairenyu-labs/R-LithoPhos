@@ -17,6 +17,37 @@ The **LIMA Advanced Control System** is a professional, high-precision graphical
 - **Live Camera Feed**: Real-time integration with microscope vision feeds.
 - **Modern UI Styling**: Glassmorphic, dark-mode aesthetic with hardware-synchronized button states and responsive components.
 
+---
+
+## 📸 System Gallery & Monitoring
+
+Below are the screenshots from the LIMA Advanced Control Interface and the real-time monitoring dashboard.
+
+### System Interface
+| Main Control Menu | Home Positioning & Calibration |
+|:---:|:---:|
+| <img src="docs/screenshots/01_main_menu.png" width="400"> | <img src="docs/screenshots/02_home_positioning.png" width="400"> |
+
+| Valve & Vacuum Controls | Motor Configuration |
+|:---:|:---:|
+| <img src="docs/screenshots/03_valve_controls.png" width="400"> | <img src="docs/screenshots/04_motor_settings.png" width="400"> |
+
+### Real-Time Telemetry
+The system parameters are streamed via InfluxDB and visualized through a custom Grafana dashboard for hardware health and process tracking.
+
+<div align="center">
+  <img src="docs/screenshots/06_grafana_monitoring_1.png" width="850" style="display: block; margin-bottom: 0;">
+  <img src="docs/screenshots/06_grafana_monitoring_2.png" width="850" style="display: block; margin-top: -1px;">
+</div>
+
+> **System Note:** Monitoring includes real-time telemetry for STM32 connectivity, motor encoder positions, and pneumatic valve states.
+
+| Grafana Monitoring Dashboard |
+|:---:|
+| <img src="docs/screenshots/06_grafana_monitoring_1.png" width="820"> |
+
+---
+
 ## Hardware Requirements
 
 - **Microcontroller**: STM32 series running the LIMA compatible firmware.
