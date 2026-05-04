@@ -42,9 +42,6 @@ The system parameters are streamed via InfluxDB and visualized through a custom 
 
 > **System Note:** Monitoring includes real-time telemetry for STM32 connectivity, motor encoder positions, and pneumatic valve states.
 
-| Grafana Monitoring Dashboard |
-|:---:|
-| <img src="docs/screenshots/06_grafana_monitoring_1.png" width="820"> |
 
 ---
 
