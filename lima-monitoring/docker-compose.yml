@@ -1,0 +1,55 @@
+version: '3.8'
+
+services:
+
+  mosquitto:
+    image: eclipse-mosquitto:2
+    container_name: lima-mqtt
+    ports:
+      - "1883:1883"
+      - "9001:9001"
+    volumes:
+      - ./mosquitto/config:/mosquitto/config
+      - ./mosquitto/data:/mosquitto/data
+      - ./mosquitto/log:/mosquitto/log
+
+  influxdb:
+    image: influxdb:2.7
+    container_name: lima-influxdb
+    ports:
+      - "8086:8086"
+    environment:
+      - DOCKER_INFLUXDB_INIT_MODE=setup
+      - DOCKER_INFLUXDB_INIT_USERNAME=can
+      - DOCKER_INFLUXDB_INIT_PASSWORD=lima_password
+      - DOCKER_INFLUXDB_INIT_ORG=lima_org
+      - DOCKER_INFLUXDB_INIT_BUCKET=lima_data
+      - DOCKER_INFLUXDB_INIT_ADMIN_TOKEN=lima-secret-token-2024
+    volumes:
+      - influxdb_data:/var/lib/influxdb2
+
+  telegraf:
+    image: telegraf:1.30
+    container_name: lima-telegraf
+    depends_on:
+      - mosquitto
+      - influxdb
+    volumes:
+      - ./telegraf/telegraf.conf:/etc/telegraf/telegraf.conf:ro
+
+  grafana:
+    image: grafana/grafana:10.4.0
+    container_name: lima-grafana
+    ports:
+      - "3000:3000"
+    environment:
+      - GF_SECURITY_ADMIN_USER=Endryu
+      - GF_SECURITY_ADMIN_PASSWORD=Enryu
+    volumes:
+      - grafana_data:/var/lib/grafana
+    depends_on:
+      - influxdb
+
+volumes:
+  influxdb_data:
+  grafana_data:
