@@ -28,26 +28,26 @@ A comprehensive look at the LIMA Advanced Control System modules, from initial a
 ### 🎮 Interface Modules
 | **Main Menu** | **Home Positioning** |
 |:---:|:---:|
-| <img src="docs/screenshots/01_main_menu.png" width="400"> | <img src="docs/screenshots/02_home_positioning.png" width="400"> |
+| <img src="assets/images/01_main_menu.png" width="400"> | <img src="docs/screenshots/02_home_positioning.png" width="400"> |
 
 | **Valve Controls** | **Motor Settings** |
 |:---:|:---:|
-| <img src="docs/screenshots/03_valve_controls.png" width="400"> | <img src="docs/screenshots/04_motor_settings.png" width="400"> |
+| <img src="assets/images/03_valve_controls.png" width="400"> | <img src="docs/screenshots/04_motor_settings.png" width="400"> |
 
 | **Diagnostics** | **Process Management** |
 |:---:|:---:|
-| <img src="docs/screenshots/05_diagnostics.png" width="400"> | <img src="docs/screenshots/07_Process.png" width="400"> |
+| <img src="assets/images/05_diagnostics.png" width="400"> | <img src="docs/screenshots/07_Process.png" width="400"> |
 
 ### 🔬 Alignment & Vision
 *Real-time microscope feed integration and wafer alignment sequences.*
 
 | **Alignment Sequence 01** | **Alignment Sequence 02** |
 |:---:|:---:|
-| <img src="docs/screenshots/Alligmen_01.PNG" width="400"> | <img src="docs/screenshots/Alligmen_02.PNG" width="400"> |
+| <img src="assets/images/Alligmen_01.PNG" width="400"> | <img src="docs/screenshots/Alligmen_02.PNG" width="400"> |
 
 | **Alignment Sequence 03** | **Alignment Sequence 05** |
 |:---:|:---:|
-| <img src="docs/screenshots/Alligmen_03.PNG" width="400"> | <img src="docs/screenshots/Alligmen_05.PNG" width="400"> |
+| <img src="assets/images/Alligmen_03.PNG" width="400"> | <img src="docs/screenshots/Alligmen_05.PNG" width="400"> |
 
 ---
 
@@ -55,8 +55,8 @@ A comprehensive look at the LIMA Advanced Control System modules, from initial a
 The system streams hardware health and process data via InfluxDB to a dual-layered Grafana dashboard.
 
 <div align="center">
-  <img src="docs/screenshots/06_grafana_monitoring_1.png" width="850" style="display: block; margin-bottom: 0;">
-  <img src="docs/screenshots/06_grafana_monitoring_2.png" width="850" style="display: block; margin-top: -1px;">
+  <img src="assets/images/06_grafana_monitoring_1.png" width="850" style="display: block; margin-bottom: 0;">
+  <img src="assets/images/06_grafana_monitoring_2.png" width="850" style="display: block; margin-top: -1px;">
 </div>
 
 > **Note:** The dashboard visualizes real-time status for all 9 motor axes, vacuum levels, and STM32 communication logs.
